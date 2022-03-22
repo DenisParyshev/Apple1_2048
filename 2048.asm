@@ -397,10 +397,10 @@ init
   ldx #$0
   lda #$0
 init1
-  ;sta A11,x
-  ;inx
-  ;cpx #$10
-  ;bne init1
+  sta A11,x
+  inx
+  cpx #$10
+  bne init1
   lda #$1
   sta A11 
 rts
@@ -468,7 +468,6 @@ shift
 rts 
 
 youwin
-  ;jsr clrsrc
   ldx #$0
 wnxt1
   lda w1mes,x

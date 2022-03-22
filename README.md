@@ -12,7 +12,7 @@ Files content:<br>
 2048.wav - game sound file that can be downloaded to a computer via a tape adapter.<br>
 To load wav file, use commands<br>
 C100R<br>
-280.9C3R<br>
+280.9CBR<br>
 280R<br>
 <br>
 To run, you can also use the online emulator https://www.scullinsteel.com/apple1/<br>
@@ -20,5 +20,6 @@ Just press Reset, copy the contents of the 2048.hex file to the clipboard, paste
 280<br>
 R<br>
 <br>
+Here is a little story about how I built this computer. Google translate will help translate into any language. https://habr.com/en/post/431270/<br>
 And the last. Forgive me for my assembler. This is my first project under 6502 :)<br>
 **Have a good time!**
