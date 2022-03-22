@@ -20,5 +20,5 @@ Just press Reset, copy the contents of the 2048.hex file to the clipboard, paste
 280<br>
 R<br>
 <br>
-And the last one. Forgive me for my assembler. This is my first project under 6502 :)<br>
+And the last. Forgive me for my assembler. This is my first project under 6502 :)<br>
 **Have a good time!**
