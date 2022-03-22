@@ -1,4 +1,4 @@
-# Apple1 2048 for Apple 1<br>
+# 2048 for Apple 1<br>
 <br>
 Thanks for coming here!<br>
 This is a clone of the famous game 2048 for the Apple 1 computer.<br>
