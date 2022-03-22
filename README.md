@@ -20,5 +20,6 @@ Just press Reset, copy the contents of the 2048.hex file to the clipboard, paste
 280<br>
 R<br>
 <br>
+Here is a little story about how I built this computer. Google translate will help translate into any language. https://habr.com/en/post/431270/<br>
 And the last. Forgive me for my assembler. This is my first project under 6502 :)<br>
 **Have a good time!**
