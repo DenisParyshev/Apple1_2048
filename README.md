@@ -12,7 +12,7 @@ Files content:<br>
 2048.wav - game sound file that can be downloaded to a computer via a tape adapter.<br>
 To load wav file, use commands<br>
 C100R<br>
-280.9CBR<br>
+280.A29R<br>
 280R<br>
 <br>
 To run, you can also use the online emulator https://www.scullinsteel.com/apple1/<br>

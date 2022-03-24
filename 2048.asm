@@ -66,35 +66,35 @@ N11
 A11
   .byte 1
 A12
-  .byte 0
+  .byte 1
 A13
   .byte 0
 A14
-  .byte 0
+  .byte 1
 A21
-  .byte 0
+  .byte 2
 A22
-  .byte 0
+  .byte 2
 A23
-  .byte 0
+  .byte 2
 A24
-  .byte 0
+  .byte 2
 A31
-  .byte 0
+  .byte 3
 A32
-  .byte 0
+  .byte 3
 A33
-  .byte 0
+  .byte 3
 A34
-  .byte 0
+  .byte 3
 A41
-  .byte 0
+  .byte 4
 A42
-  .byte 0
+  .byte 4
 A43
-  .byte 0
+  .byte 10
 A44
-  .byte 0
+  .byte 10
 
 longLine
  .byte $2B
@@ -127,6 +127,191 @@ longLine
  .byte $2D
  .byte $2B
  .byte $8D
+
+g0mes
+ .byte $47
+ .byte $41
+ .byte $4D
+ .byte $45
+ .byte $20
+ .byte $4F
+ .byte $56
+ .byte $45
+ .byte $52
+
+w1mes
+ .byte $59
+ .byte $4F
+ .byte $55
+ .byte $20
+ .byte $57
+ .byte $49
+ .byte $4E
+
+logo
+  .byte $32
+  .byte $30
+  .byte $34
+  .byte $38
+  .byte $8D
+  .byte $8D
+  .byte $57
+  .byte $2D
+  .byte $55
+  .byte $50
+  .byte $8D
+  .byte $41
+  .byte $2D
+  .byte $4C
+  .byte $45
+  .byte $46
+  .byte $54
+  .byte $8D
+  .byte $44
+  .byte $2D
+  .byte $52
+  .byte $49
+  .byte $47
+  .byte $48
+  .byte $54
+  .byte $8D
+  .byte $53
+  .byte $2D
+  .byte $44
+  .byte $4F
+  .byte $57
+  .byte $4E
+  .byte $8D
+  .byte $8D
+  .byte $43
+  .byte $4F
+  .byte $44
+  .byte $45
+  .byte $3A
+  .byte $20
+  .byte $44
+  .byte $45
+  .byte $4E
+  .byte $49
+  .byte $53
+  .byte $20
+  .byte $50
+  .byte $41
+  .byte $52
+  .byte $59
+  .byte $53
+  .byte $48
+  .byte $45
+  .byte $56
+  .byte $8D
+;special thanks
+  .byte $53 
+  .byte $50 
+  .byte $45 
+  .byte $43 
+  .byte $49 
+  .byte $41 
+  .byte $4C 
+  .byte $20 
+  .byte $54 
+  .byte $48 
+  .byte $41 
+  .byte $4E 
+  .byte $4B 
+  .byte $53 
+  .byte $20 
+  .byte $54 
+  .byte $4F 
+  .byte $8D 
+  .byte $49 
+  .byte $47 
+  .byte $4F 
+  .byte $52 
+  .byte $20 
+  .byte $4D 
+  .byte $55 
+  .byte $4B 
+  .byte $48 
+  .byte $41 
+  .byte $4E 
+  .byte $4F 
+  .byte $56 
+  .byte $20 
+  .byte $41 
+  .byte $4E 
+  .byte $44 
+  .byte $20 
+  .byte $43 
+  .byte $4C 
+  .byte $41 
+  .byte $55 
+  .byte $44 
+  .byte $49 
+  .byte $4F 
+  .byte $20 
+  .byte $50 
+  .byte $41 
+  .byte $52 
+  .byte $4D 
+  .byte $49 
+  .byte $47 
+  .byte $49 
+  .byte $41 
+  .byte $4E 
+  .byte $49 
+  .byte $8D 
+  .byte $46 
+  .byte $4F 
+  .byte $52 
+  .byte $20 
+  .byte $54 
+  .byte $45 
+  .byte $53 
+  .byte $54 
+  .byte $49 
+  .byte $4E 
+  .byte $47 
+  .byte $20 
+  .byte $41 
+  .byte $4E 
+  .byte $44 
+  .byte $20 
+  .byte $49 
+  .byte $4D 
+  .byte $50 
+  .byte $52 
+  .byte $4F 
+  .byte $56 
+  .byte $49 
+  .byte $4E 
+  .byte $47 
+  .byte $20 
+  .byte $54 
+  .byte $48 
+  .byte $45 
+  .byte $20 
+  .byte $47 
+  .byte $41 
+  .byte $4D 
+  .byte $45 
+  .byte $21
+  .byte $8D
+;press any key
+pressakey
+  .byte $8D
+  .byte $50
+  .byte $52
+  .byte $45
+  .byte $53
+  .byte $53
+  .byte $20
+  .byte $41
+  .byte $4E
+  .byte $59
+  .byte $20
+  .byte $4B
+  .byte $45
+  .byte $59
 
 lastKey
  .byte $0
@@ -237,84 +422,13 @@ print
   jsr lline
 rts 
 
-logo
-  .byte $32
-  .byte $30
-  .byte $34
-  .byte $38
-  .byte $8D
-  .byte $8D
-  .byte $57
-  .byte $2D
-  .byte $55
-  .byte $50
-  .byte $8D
-  .byte $41
-  .byte $2D
-  .byte $4C
-  .byte $45
-  .byte $46
-  .byte $54
-  .byte $8D
-  .byte $44
-  .byte $2D
-  .byte $52
-  .byte $49
-  .byte $47
-  .byte $48
-  .byte $54
-  .byte $8D
-  .byte $53
-  .byte $2D
-  .byte $44
-  .byte $4F
-  .byte $57
-  .byte $4E
-  .byte $8D
-  .byte $8D
-  .byte $43
-  .byte $4F
-  .byte $44
-  .byte $45
-  .byte $3A
-  .byte $20
-  .byte $44
-  .byte $45
-  .byte $4E
-  .byte $49
-  .byte $53
-  .byte $20
-  .byte $50
-  .byte $41
-  .byte $52
-  .byte $59
-  .byte $53
-  .byte $48
-  .byte $45
-  .byte $56
-  .byte $8D
-  .byte $8D
-  .byte $50
-  .byte $52
-  .byte $45
-  .byte $53
-  .byte $53
-  .byte $20
-  .byte $41
-  .byte $4E
-  .byte $59
-  .byte $20
-  .byte $4B
-  .byte $45
-  .byte $59
-
 startscreen
   ldx #0
 snchr
   lda logo,x
   jsr $FFEF
   inx 
-  cpx #$45
+  cpx #$A0
   beq snchrdone
   jmp snchr
 snchrdone  
@@ -323,30 +437,10 @@ snchrdone
   lda $D010
   sta lastKey
 rts  
-
-g0mes
- .byte $47
- .byte $41
- .byte $4D
- .byte $45
- .byte $20
- .byte $4F
- .byte $56
- .byte $45
- .byte $52
-
-w1mes
- .byte $59
- .byte $4F
- .byte $55
- .byte $20
- .byte $57
- .byte $49
- .byte $4E
   
 gameover
-  jsr clrsrc
   jsr print
+  jsr put8D
   ldx #$0
 gnxt1
   lda g0mes,x
@@ -356,12 +450,12 @@ gnxt1
   beq gdn1
   jmp gnxt1
 gdn1
-  ldx #$36
+  ldx #$0
 gnxt2
-  lda logo,x
+  lda pressakey,x
   jsr $FFEF
   inx 
-  cpx #$45
+  cpx #$0E
   beq gdn2
   jmp gnxt2
 gdn2
@@ -468,6 +562,7 @@ shift
 rts 
 
 youwin
+  jsr put8D
   ldx #$0
 wnxt1
   lda w1mes,x
@@ -477,12 +572,12 @@ wnxt1
   beq wnn1
   jmp wnxt1
 wnn1
-  ldx #$36
+  ldx #$0
 wnxt2
-  lda logo,x
+  lda pressakey,x
   jsr $FFEF
   inx 
-  cpx #$45
+  cpx #$0E
   beq wnnx2
   jmp wnxt2
 wnnx2
